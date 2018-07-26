@@ -3,9 +3,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Created by luyh on 16/4/27.
+ * springboot启动类
  */
-
 @SpringBootApplication
 @ComponentScan("com.wx.project")
 public class Application {

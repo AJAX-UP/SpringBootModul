@@ -9,9 +9,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
-/**
- * Created by trons on 16-4-17.
- */
+
 @Configuration
 public class MyBatisConfig {
     @Bean

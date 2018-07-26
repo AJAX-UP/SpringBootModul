@@ -3,10 +3,9 @@ package com.wx.project.dao;
 import com.wx.project.dao.mapper.UserMapper;
 import com.wx.project.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-/**
- * Created by ucmed on 2018/7/26.
- */
+@Component
 public class DaoUser implements IDaoUser {
 
     @Autowired
