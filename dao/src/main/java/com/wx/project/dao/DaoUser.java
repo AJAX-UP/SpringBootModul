@@ -5,6 +5,9 @@ import com.wx.project.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author ucmed
+ */
 @Component
 public class DaoUser implements IDaoUser {
 
