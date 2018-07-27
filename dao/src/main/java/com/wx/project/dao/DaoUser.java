@@ -17,4 +17,8 @@ public class DaoUser implements IDaoUser {
     public User selectByPrimaryKey(Integer Id) throws Exception {
         return userMapper.selectByPrimaryKey(Id);
     }
+    @Override
+    public int insert(User user) throws Exception{
+        return userMapper.insert(user);
+    }
 }

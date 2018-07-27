@@ -9,4 +9,6 @@ public interface IUserService {
 
     User selectByPrimaryKey(Integer Id) throws Exception;
 
+    int insert(User user) throws Exception;
+
 }

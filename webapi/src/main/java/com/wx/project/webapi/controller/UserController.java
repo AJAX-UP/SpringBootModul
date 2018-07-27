@@ -20,7 +20,13 @@ public class UserController {
     User findMemberByMemberId() throws Exception{
        return userService.selectByPrimaryKey(1);
     }
-
+    @RequestMapping("/user/insert")
+    int insert() throws Exception{
+        User user=new User();
+        user.setId(2);
+        user.setUserName("测试事务");
+        return userService.insert(user);
+    }
 
 
 }
