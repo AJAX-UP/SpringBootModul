@@ -1,6 +1,7 @@
 package com.wx.project.dao;
 
 import com.wx.project.dao.mapper.WxRoleMapper;
+import com.wx.project.model.WxRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

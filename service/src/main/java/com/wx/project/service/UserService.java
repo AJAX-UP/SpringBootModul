@@ -3,6 +3,7 @@ package com.wx.project.service;
 import com.wx.project.dao.IDaoRole;
 import com.wx.project.dao.IDaoUser;
 import com.wx.project.model.User;
+import com.wx.project.model.WxRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,5 +1,7 @@
 package com.wx.project.dao.mapper;
 
+import com.wx.project.model.WxRole;
+
 public interface WxRoleMapper {
     int deleteByPrimaryKey(Integer id);
 
