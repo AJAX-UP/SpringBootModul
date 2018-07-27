@@ -2,11 +2,15 @@ package com.wx.project.service;
 
 import com.wx.project.dao.IDaoRole;
 import com.wx.project.dao.IDaoUser;
+import com.wx.project.dao.redisConfig.RedisUtil;
 import com.wx.project.model.User;
 import com.wx.project.model.WxRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class UserService implements IUserService{
@@ -15,10 +19,17 @@ public class UserService implements IUserService{
     private IDaoUser daoUser;
 
     @Autowired
+    private RedisUtil redisUtil;
+
+    @Autowired
     private IDaoRole daoRole;
 
     @Override
     public User selectByPrimaryKey(Integer Id) throws Exception {
+        Map m=new HashMap<>();
+        m.put("1","121312");
+        m.put("2","121312");
+        redisUtil.setMap("123456",m);
         return daoUser.selectByPrimaryKey(Id);
     }
     @Override
