@@ -1,6 +1,11 @@
 package com.wx.project.model;
 
-public class WxRole {
+import java.io.Serializable;
+
+public class WxRole implements Serializable {
+
+    private static final long serialVersionUID = -1959528436584592183L;
+
     private Integer id;
 
     private Integer userId;

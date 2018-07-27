@@ -18,6 +18,7 @@ public class UserController {
 
     @RequestMapping("/user/selectUser")
     User findMemberByMemberId() throws Exception{
+        System.out.println("打印语句则没有走缓存11111111");
        return userService.selectByPrimaryKey(1);
     }
     @RequestMapping("/user/insert")

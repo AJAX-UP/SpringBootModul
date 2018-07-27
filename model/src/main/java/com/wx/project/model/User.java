@@ -1,6 +1,10 @@
 package com.wx.project.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = -1959528436584592183L;
+
     private Integer id;
 
     private String userName;
