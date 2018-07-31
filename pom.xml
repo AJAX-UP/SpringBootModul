@@ -19,7 +19,7 @@
         <module>dao</module>
         <module>service</module>
         <module>webapi</module>
-        <module>wxApp</module>
+        <module>wxapp</module>
     </modules>
 
     <!--申明依赖关系-->
