@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 控制类
  */
-@Api(value="用户controller",tags={"用户操作接口"})
+@Api(value="用户controller",tags={"用户接口1"})
 @RestController
 public class UserController {
 
@@ -22,7 +22,7 @@ public class UserController {
 
     @ApiOperation(value="获取用户详细信息", notes="根据url的id来获取用户详细信息")
     @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer", paramType = "path")
-    @RequestMapping(value = "user/selectUser2", method = RequestMethod.POST)
+    @RequestMapping(value = "user/selectUser2", method = RequestMethod.GET)
     User findMemberByMemberId() throws Exception{
         System.out.println("打印语句则没有走缓存11111111");
        return userService.selectByPrimaryKey(1);
