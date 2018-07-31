@@ -19,6 +19,7 @@
         <module>dao</module>
         <module>service</module>
         <module>webapi</module>
+        <module>wxApp</module>
     </modules>
 
     <!--申明依赖关系-->
@@ -60,7 +61,6 @@
         </dependency>
     </dependencies>
     <!--设置maven仓库-->
-
     <repositories>
         <repository>
             <id>spring-releases</id>
@@ -73,4 +73,13 @@
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
