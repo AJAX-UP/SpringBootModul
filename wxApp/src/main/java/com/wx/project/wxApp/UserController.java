@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 控制类
  */
-@Api(value="用户controller",tags={"用户接口1"})
+@Api(value="用户controller",tags={"用户接口"})
 @RestController
 public class UserController {
 
